@@ -1,216 +1,26 @@
-ReactJS Course Management Application
-📋 Project Overview
-Aplikasi ReactJS untuk manajemen kursus online yang dinamis dan interaktif dengan integrasi API dan state management menggunakan Redux Toolkit.
+React Course Management App
+Aplikasi manajemen kursus online yang dibangun dengan ReactJS, Redux Toolkit, dan Tailwind CSS.
 
-🎯 Mission Objectives
-Mengintegrasikan data static dengan penggunaan API untuk membangun aplikasi React yang dinamis dan interaktif
+🚀 Fitur Utama
+✅ CRUD Operations - Tambah, edit, hapus, dan lihat kursus
 
-Mendalami framework React dengan implementasi best practices
+✅ State Management - Redux Toolkit untuk state global
 
-Menerapkan state management dan API consumption secara efektif
+✅ API Integration - Konsumsi API dengan Axios + fallback system
 
-🛠 Tech Stack & Skill Set
-Core Technologies
-ReactJS - Frontend framework
+✅ Responsive Design - Mobile-first dengan Tailwind CSS
 
-Redux Toolkit - State management
+✅ Category Filtering - Filter kursus berdasarkan kategori
 
-React Redux - React bindings for Redux
+✅ Form Validation - Validasi form add/edit kursus
 
-Axios - HTTP client for API calls
+🛠 Teknologi
+ReactJS
 
-Tailwind CSS - Styling framework
+Redux Toolkit & React Redux
 
-Implemented Skills
-✅ Custom Hooks implementation
+Axios
 
-✅ API consumption dengan Axios
+Tailwind CSS
 
-✅ State Management dengan Redux Toolkit
-
-✅ Component lifecycle management
-
-✅ Form handling dan validation
-
-✅ Error handling dan loading states
-
-✅ Image optimization dan error fallbacks
-
-🚀 Features Implemented
-✅ STEP 4: API Integration (Mandatory)
-GET Data Integration - Mengambil data kursus dari API
-
-ADD Course - Menambahkan kursus baru dengan form validation
-
-EDIT Course - Mengupdate data kursus yang sudah ada
-
-DELETE Course - Menghapus kursus dengan konfirmasi
-
-Real-time Updates - UI update otomatis setelah operasi CRUD
-
-✅ STEP 3: State Management (Optional - Completed)
-Redux Toolkit Setup - Store configuration dengan Redux Toolkit
-
-Async Actions - Thunks untuk handling API calls
-
-State Persistence - Global state management untuk courses data
-
-Filtering & Categorization - State management untuk kategori dan filter
-
-🎨 UI/UX Features
-Responsive Design - Mobile-first responsive layout
-
-Image Optimization - Safe image component dengan error handling
-
-Loading States - Skeleton loading dan loading indicators
-
-Error Handling - Comprehensive error handling dan user feedback
-
-Form Validation - Client-side validation untuk forms
-
-Category Filtering - Filter kursus berdasarkan kategori
-
-🔧 API Integration
-Endpoints Consumed
-GET /courses - Mendapatkan semua kursus
-
-POST /courses - Menambah kursus baru
-
-PUT /courses/:id - Mengupdate kursus
-
-DELETE /courses/:id - Menghapus kursus
-
-Fallback System
-MockAPI.io sebagai primary backend
-
-Local fallback service untuk offline/error scenarios
-
-Automatic fallback ketika API tidak tersedia
-
-📊 State Management
-Redux Store Structure
-javascript
-{
-  courses: {
-    items: [],           // All courses
-    filteredItems: [],   // Filtered courses by category
-    categories: [],      // Available categories
-    activeCategory: '',  // Currently selected category
-    loading: false,      // Loading state
-    error: null,         // Error state
-    initialized: false   // Initial data loaded
-  }
-}
-Key Redux Actions
-fetchCourses() - Load semua kursus
-
-addCourse(courseData) - Tambah kursus baru
-
-updateCourse({id, courseData}) - Update kursus
-
-deleteCourse(id) - Hapus kursus
-
-setActiveCategory(category) - Set kategori aktif
-
-🎯 Component Architecture
-Smart Components
-MainApp - Root component dengan provider setup
-
-CourseCard - Main container untuk manajemen kursus
-
-CourseListView - List view dengan filtering
-
-Presentational Components
-CourseItem - Individual course display
-
-CourseForm - Add/Edit form modal
-
-Navbar, Hero, Footer - Layout components
-
-Custom Hooks
-useCourses() - Courses state management
-
-useImageUpload() - Image handling utilities
-
-🔄 Data Flow
-Initial Load - MainApp → useCourses → fetchCourses → API
-
-State Update - API Response → Redux Store → Component Re-render
-
-User Actions - Component → Dispatch Action → Redux Middleware → API
-
-UI Update - Store Update → Component Subscription → UI Update
-
-🛡 Error Handling & Validation
-Client-side Validation
-Required field validation
-
-Price, rating numeric validation
-
-Image URL validation
-
-Form error messaging
-
-API Error Handling
-Network error handling
-
-Timeout management
-
-Fallback data system
-
-User-friendly error messages
-
-📱 Responsive Features
-Mobile-first design approach
-
-Flexible grid layouts
-
-Adaptive navigation
-
-Touch-friendly interfaces
-
-Optimized images for different screens
-
-🚀 Getting Started
-Prerequisites
-Node.js (v14 or higher)
-
-npm atau yarn
-
-Installation
-Clone repository
-
-Install dependencies: npm install
-
-Start development server: npm run dev
-
-Open browser: http://localhost:5173
-
-Build for Production
-bash
-npm run build
-📈 Performance Optimizations
-Lazy loading images
-
-Efficient re-renders dengan proper state management
-
-Optimized bundle size
-
-Memoized components dimana diperlukan
-
-Efficient API calls dengan caching
-
-🔮 Future Enhancements
-Pagination untuk course list
-
-Search functionality
-
-User authentication
-
-Course enrollment system
-
-Payment integration
-
-Advanced filtering options
-
-Course progress tracking
+MockAPI.io
