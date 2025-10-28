@@ -36,32 +36,6 @@ Implemented Skills
 
 ✅ Image optimization dan error fallbacks
 
-📁 Project Structure
-text
-src/
-├── components/          # React components
-│   ├── CourseCard.jsx   # Main course display component
-│   ├── CourseForm.jsx   # Add/Edit course form
-│   ├── CourseItem.jsx   # Individual course item
-│   ├── CourseListView.jsx # Course list view
-│   ├── Footer.jsx       # Footer component
-│   ├── Hero.jsx         # Hero section
-│   ├── MainApp.jsx      # Main application component
-│   ├── Navbar.jsx       # Navigation bar
-│   └── Newsletter.jsx   # Newsletter subscription
-├── hooks/               # Custom hooks
-│   ├── useCourses.js    # Courses management hook
-│   └── useImageUpload.js # Image upload handling
-├── services/            # API services
-│   └── api/
-│       ├── axiosConfig.js    # Axios configuration
-│       ├── courseService.js  # Course API service
-│       └── fallbackService.js # Fallback data service
-├── store/               # Redux store
-│   ├── index.js         # Store configuration
-│   └── slices/
-│       └── coursesSlice.js # Courses state slice
-└── App.jsx             # Root application component
 🚀 Features Implemented
 ✅ STEP 4: API Integration (Mandatory)
 GET Data Integration - Mengambil data kursus dari API
